@@ -105,7 +105,7 @@ class RenderWebGL extends EventEmitter {
      * @private
      */
     static _getContext (canvas) {
-        return twgl.getWebGLContext(canvas, {alpha: false, stencil: true, antialias: false});
+        return twgl.getWebGLContext(canvas, {alpha: false, stencil: true, antialias: false, preserveDrawingBuffer: true});
     }
 
     /**
